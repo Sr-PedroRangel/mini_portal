@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#cabecalho{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    background-color: azure;
+    
+}
+#cabecalho h1{
+    padding: 5px;
+    
+}
+#cabecalho h2{
+    padding: 5px;
+
+}
+nav ul li{
+    display: inline;
+    padding: 3px;
+}
+nav a:hover{
+    color: orange;
+}
+nav a{
+    text-decoration: none;
+}
+
+#hero{
+
+    min-height: 500px; 
+    background-image: url("/assets/img/image.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+
+
+
+#hero::before{
+    content: "";
+    position: absolute; /* Posiciona em relação ao `#hero` */
+    inset: 0; /* Preenche toda a área do `#hero` */
+    background: rgba(0, 0, 0, 0.55); /* Sobreposição escura com 55% de opacidade */
+}
+
+.hero-content{
+    position: relative; /* Garante que o conteúdo fique acima do overlay */
+    color: white; /* Texto branco */
+    text-align: center; /* Alinha o texto ao centro */
+    max-width: 800px; /* Limita a largura do texto */
+}
+
+.hero-content h3{
+    font-size: 3rem; /* Tamanho grande para o título */
+    margin-bottom: 1rem; /* Espaço abaixo do título */
+}
+
+.hero-content p{
+    font-size: 1.4rem; /* Tamanho de texto menor para a descrição */
+}
