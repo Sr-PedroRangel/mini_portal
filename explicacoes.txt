@@ -1,0 +1,28 @@
+Unidades de medida
+
+No início do projeto, utilizei valores em px para definir a largura dos cards, pois isso facilita o controle do layout na primeira versão. Depois, combinei px, % e flex-grow, permitindo que os cards se ajustem automaticamente conforme o tamanho da tela. No aside, usei largura em %, garantindo que ele se adapte melhor a diferentes resoluções.
+
+Box model
+
+O box model foi aplicado em todos os cards e seções da página. Utilizei padding para criar espaçamento interno, margin para separar os elementos entre si e border para delimitar visualmente cada bloco. Também usei box-sizing: border-box para garantir que o padding e a borda não alterem o tamanho final dos elementos.
+
+Uso de tags semânticas
+
+A estrutura da página foi organizada com tags semânticas para melhorar a leitura do código e a acessibilidade:
+
+header: contém o título principal e o menu de navegação
+
+main: junta todo o conteúdo principal da página
+
+article: utilizado nos cards, pois cada um representa um conteúdo independente
+
+aside: usado para exibir uma curiosidade relacionada ao tema, funcionando como conteúdo complementar
+
+figure e figcaption: usadas para relacionar imagens com suas legendas
+
+footer: utilizado para o rodapé com informações de direitos autorais.
+
+
+Uso de WAI-ARIA
+
+Para melhorar a acessibilidade, apliquei atributos WAI-ARIA em alguns elementos.Os botões possuem aria-label, ajudando leitores de tela a entenderem melhor sua função. No aside, foi utilizado aria-labelledby para associar o título do bloco ao seu conteúdo.
